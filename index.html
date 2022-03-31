@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavesh Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url("gym.jpg");
+            /* height: 1275px; */
+            height: 96vh;
+            font-family: 'Lora', serif;
+
+            color: white;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 32px;
+            top: 8px;
+        }
+
+        .left img {
+            width: 80px;
+            margin: -10px 14px
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+
+
+
+
+
+
+        .mid {
+            /* border: 2px solid green; */
+            display: block;
+            width: 48%;
+            margin: 30px auto;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 24px 30px;
+            font-size: 24px;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: rgb(122, 122, 122);
+        }
+
+
+
+
+
+
+        .right {
+            /* border: 2px solid blue; */
+            display: inline-block;
+            position: absolute;
+            right: 24px;
+            top: 18px;
+        }
+
+        .btn {
+            margin: 0px 8px;
+            background-color: black;
+            color: white;
+            padding: 4px 8px;
+            border: 2px solid grey;
+            border-radius: 12px;
+            font-size: 18px;
+            font-family: 'Lora', serif;
+        }
+
+        .btn:hover {
+            cursor: pointer;
+            background-color: rgb(122, 122, 122);
+            color: black;
+        }
+
+
+
+
+        .container {
+            border: 2px solid white;
+            display: block;
+            width: 520px;
+            height: 516px;
+            margin: 180px 1094px;
+            background-color: #333333f0;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Lora', serif;
+        }
+
+        .formgroup input {
+            text-align: center;
+            display: block;
+            width: 360px;
+            height: 48px;
+            padding: 0px 32px;
+            border: 2px solid blue;
+            border-radius: 8px;
+            margin: 22px auto;
+            font-size: 28px;
+            font-family: 'Lora', serif;
+        }
+
+        #submit {
+            margin: 32px 160px;
+            padding: 12px 80px;
+        }
+
+        .experience {
+            margin-left: 172px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="logo.png" alt="Error loading the image">
+            <div>
+                Bhavesh Fitness
+            </div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join the best gym in the area</h1>
+        <form action="backend.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Contact No.">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Email Address">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Area">
+            </div>
+            <div class="formgroup">
+                <label for="Experience" class="experience">Experience :</label>
+                <select name="Experience" class="Experience">
+                    <option value="default" selected>select</option>
+                    <option value="in">Beginner</option>
+                    <option value="swf">Intermediate</option>
+                    <option value="scr">Athelete</option>
+                </select>
+            </div>
+            <button class="btn" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
